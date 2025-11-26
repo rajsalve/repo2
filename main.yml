@@ -1,9 +1,9 @@
-name: GitHub action demo pipeline
+name: github action demo pipeline
 #trigger event
 on:                     
   push:
      branch:
-        -main      
+        - main      
 
 jobs:        
    demo-job:
