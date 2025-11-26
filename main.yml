@@ -1,0 +1,18 @@
+name: GitHub action demo pipeline
+#trigger event
+on:                     
+  push:
+     branch:
+        -main      
+
+jobs:        
+   demo-job:
+      runs-on: ubuntu-latest   
+    
+      steps:
+         -name: checkout code
+          uses: actions/checkout@v2
+
+         -name: print message
+          runs: echo "welcome to GitHub actions" 
+
